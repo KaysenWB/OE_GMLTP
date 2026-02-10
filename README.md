@@ -4,6 +4,25 @@ This code is for the paper "Graph-driven Multi-vessel Long-term Trajectories Pre
 
 The input is trajectory data with the shape [length, batch, feature], and a corresponding adjacency matrix with the shape [length, nodes, nodes], which can be referred to the following code for data processing: https://github.com/KaysenWB/AIS-Process. Please note that setting the parameter MGSC to "True"
 
+# Environment Setup
+
+**System Requirements**
+
+- Operating System: Linux (Ubuntu 18.04+ recommended)
+- Python 3.8 or higher
+- CUDA 11.3+ (for GPU acceleration, optional)
+
+**Dependencies**
+
+- torch==2.8.0
+- numpy==2.0.1
+- pandas==2.3.3
+- math==1.3.0
+- pytorch_tcn==1.2.3
+- matplotlib == 3.7.2
+- torch-geometric==2.3.2
+
+
 
 ![Figure01](https://github.com/KaysenWB/OE-GMLTP/blob/main/Figure01.jpg?raw=true)
 General overview figure of the paper. It includes data processing, trajectory prediction, and route planning.
