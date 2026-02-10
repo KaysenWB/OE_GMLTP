@@ -28,9 +28,9 @@ The main execution file is `main_gmltp.py`. The components of several models are
 
 ## Algorithm Structure
 
-<div align="center">
-<img src="https://github.com/KaysenWB/OE-GMLTP/blob/main/Figure01.jpg?raw=true" width="90%" height="90%">
-</div>
+
+<img src="https://github.com/KaysenWB/OE-GMLTP/blob/main/Figure01.jpg?raw=true" width="95%" height="95%">
+
 
 General overview figure of the paper. It includes data processing, trajectory prediction, and route planning.
 
@@ -38,9 +38,8 @@ Our proposed algorithmic flow for GMLTP on time series prediction. The key point
 
 ## Results
 
-<div align="center">
-<img src="https://github.com/KaysenWB/OE-GMLTP/blob/main/Figure03.jpg?raw=true" width="90%" height="90%">
-</div>
+<img src="https://github.com/KaysenWB/OE-GMLTP/blob/main/Figure03.jpg?raw=true" width="95%" height="95%">
+
 
 Presentation of prediction results, which are based on one month's AIS data for Victoria, Hong Kong.
 
