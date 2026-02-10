@@ -4,6 +4,9 @@ This code is for the paper "Graph-driven Multi-vessel Long-term Trajectories Pre
 
 The input is trajectory data with the shape [length, batch, feature], and a corresponding adjacency matrix with the shape [length, nodes, nodes], which can be referred to the following code for data processing: https://github.com/KaysenWB/AIS-Process. Please note that setting the parameter MGSC to "True"
 
+The main execution file is `main_gmltp.py`. The components of several models are located in the `Models` folder. Dataset creation and loading are handled in the `data` directory. Model training, testing, and usage are implemented in the `exp` folder. The `utils` directory contains various utilities, including time encoding and metric calculations.
+
+
 ## Environment Setup
 
 **System Requirements**
@@ -22,20 +25,20 @@ The input is trajectory data with the shape [length, batch, feature], and a corr
 - matplotlib==3.7.2
 - torch-geometric==2.3.2
 
-## Code Description
-
-The main execution file is `main_gmltp.py`. The components of several models are located in the `Models` folder. Dataset creation and loading are handled in the `data` directory. Model training, testing, and usage are implemented in the `exp` folder. The `utils` directory contains various utilities, including time encoding and metric calculations.
-
 
 ## Algorithm Structure
 
 <img src="https://github.com/KaysenWB/OE-GMLTP/blob/main/Figure01.jpg?raw=true" width="90%" height="90%">
+</center>
+
 General overview figure of the paper. It includes data processing, trajectory prediction, and route planning.
 
 Our proposed algorithmic flow for GMLTP on time series prediction. The key point is to perform Q-matrix sparsification before self-attention. We measure the effectiveness of each qi in the attention computation based on the gap (KL scatter) between the data distribution of the dot product pairs of qi over the K matrix and the uniform distribution. The more effective qi vectors are then filtered proportionally to the length of the trajectory input to form a sparse matrix of Q. The sparse computation is ultimately used to reduce the complexity of self-attention and achieve longer-term prediction.
 
 ## Results
 <img src="https://github.com/KaysenWB/OE-GMLTP/blob/main/Figure03.jpg?raw=true" width="90%" height="90%">
+</center>
+
 Presentation of prediction results, which are based on one month's AIS data for Victoria, Hong Kong.
 
 
