@@ -23,6 +23,7 @@ The input is trajectory data with the shape [length, batch, feature], and a corr
 - torch-geometric==2.3.2
 
 
+# Algorithm Structure
 
 ![Figure01](https://github.com/KaysenWB/OE-GMLTP/blob/main/Figure01.jpg?raw=true)
 General overview figure of the paper. It includes data processing, trajectory prediction, and route planning.
