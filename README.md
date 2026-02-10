@@ -38,3 +38,14 @@ Presentation of prediction results, which are based on one month's AIS data for 
 # Acknowledgement
 The algorithm in this work references a lot of the following work: https://github.com/zhouhaoyi/Informer2020.git.
 Their outstanding contributions are greatly appreciated.
+
+@article{yang2024graph,
+  title={Graph-driven multi-vessel long-term trajectories prediction for route planning under complex waters},
+  author={Yang, Dong and Yang, Kaisen and Lu, Yuxu and Liang, Maohan and Zhao, Congcong},
+  journal={Ocean Engineering},
+  volume={313},
+  pages={119511},
+  year={2024},
+  publisher={Elsevier}
+}
+
