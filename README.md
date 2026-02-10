@@ -28,16 +28,19 @@ The main execution file is `main_gmltp.py`. The components of several models are
 
 ## Algorithm Structure
 
+<div align="center">
 <img src="https://github.com/KaysenWB/OE-GMLTP/blob/main/Figure01.jpg?raw=true" width="90%" height="90%">
-</center>
+</div>
 
 General overview figure of the paper. It includes data processing, trajectory prediction, and route planning.
 
 Our proposed algorithmic flow for GMLTP on time series prediction. The key point is to perform Q-matrix sparsification before self-attention. We measure the effectiveness of each qi in the attention computation based on the gap (KL scatter) between the data distribution of the dot product pairs of qi over the K matrix and the uniform distribution. The more effective qi vectors are then filtered proportionally to the length of the trajectory input to form a sparse matrix of Q. The sparse computation is ultimately used to reduce the complexity of self-attention and achieve longer-term prediction.
 
 ## Results
+
+<div align="center">
 <img src="https://github.com/KaysenWB/OE-GMLTP/blob/main/Figure03.jpg?raw=true" width="90%" height="90%">
-</center>
+</div>
 
 Presentation of prediction results, which are based on one month's AIS data for Victoria, Hong Kong.
 
