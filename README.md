@@ -40,11 +40,10 @@ Our proposed algorithmic flow for GMLTP on time series prediction. The key point
 
 <img src="https://github.com/KaysenWB/OE-GMLTP/blob/main/Figure03.jpg?raw=true" width="95%" height="95%">
 
-
 Presentation of prediction results, which are based on one month's AIS data for Victoria, Hong Kong.
 
 
-## <span id="citelink">Citation</span>
+## Citation
 If you find this repository useful in your research, please consider citing the following papers:
 ```
 @article{yang2024graph,
