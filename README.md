@@ -19,19 +19,23 @@ The input is trajectory data with the shape [length, batch, feature], and a corr
 - pandas==2.3.3
 - math==1.3.0
 - pytorch_tcn==1.2.3
-- matplotlib == 3.7.2
+- matplotlib==3.7.2
 - torch-geometric==2.3.2
+
+## Code Description
+
+The main execution file is `main_gmltp.py`. The components of several models are located in the `Models` folder. Dataset creation and loading are handled in the `data` directory. Model training, testing, and usage are implemented in the `exp` folder. The `utils` directory contains various utilities, including time encoding and metric calculations.
 
 
 ## Algorithm Structure
 
-<img src="https://github.com/KaysenWB/OE-GMLTP/blob/main/Figure01.jpg?raw=true" width="85%" height="85%">
+<img src="https://github.com/KaysenWB/OE-GMLTP/blob/main/Figure01.jpg?raw=true" width="90%" height="90%">
 General overview figure of the paper. It includes data processing, trajectory prediction, and route planning.
 
 Our proposed algorithmic flow for GMLTP on time series prediction. The key point is to perform Q-matrix sparsification before self-attention. We measure the effectiveness of each qi in the attention computation based on the gap (KL scatter) between the data distribution of the dot product pairs of qi over the K matrix and the uniform distribution. The more effective qi vectors are then filtered proportionally to the length of the trajectory input to form a sparse matrix of Q. The sparse computation is ultimately used to reduce the complexity of self-attention and achieve longer-term prediction.
 
 ## Results
-<img src="https://github.com/KaysenWB/OE-GMLTP/blob/main/Figure03.jpg?raw=true" width="85%" height="85%">
+<img src="https://github.com/KaysenWB/OE-GMLTP/blob/main/Figure03.jpg?raw=true" width="90%" height="90%">
 Presentation of prediction results, which are based on one month's AIS data for Victoria, Hong Kong.
 
 
