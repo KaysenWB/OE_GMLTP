@@ -35,9 +35,9 @@ Our proposed algorithmic flow for GMLTP on time series prediction. The key point
 ![Figure03](https://github.com/KaysenWB/OE-GMLTP/blob/main/Figure03.jpg?raw=true)
 Presentation of prediction results, which are based on one month's AIS data for Victoria, Hong Kong.
 
-# Acknowledgement
-The algorithm in this work references a lot of the following work: https://github.com/zhouhaoyi/Informer2020.git.
-Their outstanding contributions are greatly appreciated.
+
+## <span id="citelink">Citation</span>
+If you find this repository useful in your research, please consider citing the following papers:
 ```
 @article{yang2024graph,
   title={Graph-driven multi-vessel long-term trajectories prediction for route planning under complex waters},
@@ -49,3 +49,11 @@ Their outstanding contributions are greatly appreciated.
   publisher={Elsevier}
 }
 ```
+
+## Contact
+If you have any questions, feel free to contact Haoyi Zhou through Email (kaisen.yang@connect.polyu.hk). Pull requests are highly welcomed!
+
+
+# Acknowledgement
+The algorithm in this work references a lot of the following work: https://github.com/zhouhaoyi/Informer2020.git.
+Their outstanding contributions are greatly appreciated.
