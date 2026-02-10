@@ -58,7 +58,7 @@ If you find this repository useful in your research, please consider citing the 
 ```
 
 ## Contact
-If you have any questions, feel free to contact Haoyi Zhou through Email (kaisen.yang@connect.polyu.hk). Pull requests are highly welcomed!
+If you have any queries or are interested in developing collaborations and communications, please contact me via email: kaisen.yang@connect.polyu.hk (Yang Kaisen)
 
 
 ## Acknowledgement
